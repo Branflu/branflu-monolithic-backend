@@ -1,19 +1,17 @@
 package com.example.branflu.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.UUID;
-
+@Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
 public class Link {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID linkID;
-    @Column(unique = true,nullable = false)
+    private Long linkID;
+
     private String url;
 }

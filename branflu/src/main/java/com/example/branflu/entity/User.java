@@ -1,11 +1,11 @@
 package com.example.branflu.entity;
 
+import com.example.branflu.enums.Category;
 import com.example.branflu.enums.Role;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+import java.util.Date;
 import java.util.UUID;
 
 @MappedSuperclass
@@ -13,14 +13,21 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public abstract class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID userId;
+
     private String name;
     private String payPalEmail;
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    private Category category;
+
+    @Enumerated(EnumType.STRING)
     private Role role;
 
-
+    private Date createdAt;
 }

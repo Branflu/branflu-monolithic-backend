@@ -1,5 +1,6 @@
 package com.example.branflu.payload.response;
 
+import com.example.branflu.enums.Role;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
@@ -17,5 +18,7 @@ public class UserResponse {
     private UUID userId;
     private String name;
     private String payPalEmail;
+    private Role role;
     private Date createdAt;
+    private String password;
 }

@@ -5,21 +5,21 @@ import com.example.branflu.enums.Category;
 import com.example.branflu.enums.Platform;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.util.List;
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-@JsonIgnoreProperties
-@ToString
-public class InfluencerRequest extends UserRequest{
-    @NotBlank
-    private List<Platform> platforms;
-    @NotBlank
-    private Category category;
-    @NotBlank
+
+@Getter @Setter
+@NoArgsConstructor @AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class InfluencerRequest {
+    @NotBlank       private String name;
+    @NotBlank       private String payPalEmail;
+    @NotBlank       private String password;
+    @NotEmpty       private List<Platform> platforms;
+    @NotBlank       private Category category;
+    @NotNull
     private Link link;
 }

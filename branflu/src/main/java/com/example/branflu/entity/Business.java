@@ -1,11 +1,12 @@
 package com.example.branflu.entity;
 
 import jakarta.persistence.Entity;
-import com.example.branflu.enums.Category;
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter
-public class Business extends User{
-private Category category;
+@Setter
+public class Business extends User {
+    // Inherits category from User
 }

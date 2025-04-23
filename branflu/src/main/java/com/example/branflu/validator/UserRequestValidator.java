@@ -20,10 +20,9 @@ public class UserRequestValidator {
         this.emailValidator = emailValidator;
         this.linkValidator = linkValidator;
     }
-    public void validate(UserRequest userRequest,InfluencerRequest influencerRequest){
-        log.info("{} >> validate -> profileRequest: {}",getClass().getSimpleName(),userRequest.toString());
-        validateEmail(userRequest);
-        validateName(userRequest);
+    public void validateInfluencer(InfluencerRequest influencerRequest){
+        log.info("{} >> validate -> profileRequest: {}",getClass().getSimpleName(),influencerRequest.toString());
+
         validateLink(influencerRequest);
     }
     private void validateName(UserRequest userRequest){
