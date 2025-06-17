@@ -1,3 +1,4 @@
+
 package com.example.branflu.validator;
 
 import com.example.branflu.entity.Link;
