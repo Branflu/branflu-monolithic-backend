@@ -8,6 +8,7 @@ import com.example.branflu.payload.response.UserResponse;
 import com.example.branflu.security.CustomUserDetailsService;
 import com.example.branflu.security.JWTTokenHelper;
 
+import com.example.branflu.security.JwtService;
 import com.example.branflu.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -25,6 +26,7 @@ public class AuthenticationController {
     private final AuthenticationManager authenticationManager;
     private final JWTTokenHelper jwtTokenHelper;
     private final CustomUserDetailsService userDetailsService;
+    private final JwtService jwtService;
 
 
     @PostMapping("/influencer/register")
@@ -52,7 +54,7 @@ public class AuthenticationController {
         }
 
         UserDetails userDetails = userDetailsService.loadUserByUsername(jwtAuthenticationRequest.getPayPalEMail());
-        String token = jwtTokenHelper.generateToken(userDetails);
+        String token = jwtService.generateToken(userDetails);
 
         JWTAuthenticationResponse jwtAuthenticationResponse = new JWTAuthenticationResponse();
         jwtAuthenticationResponse.setToken(token);

@@ -1,5 +1,7 @@
-package com.example.branflu.security;
+package com.example.branflu.configuration;
 
+import com.example.branflu.security.JWTAuthenticationEntryPoint;
+import com.example.branflu.security.JWTAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -17,15 +19,22 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration {
 
     private final JWTAuthenticationFilter jwtAuthenticationFilter;
+    private final JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint;
 
-    public SecurityConfiguration(JWTAuthenticationFilter jwtAuthenticationFilter) {
+    public SecurityConfiguration(
+            JWTAuthenticationFilter jwtAuthenticationFilter,
+            JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint
+    ) {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
+        this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
     }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // ✅ correct syntax for Spring Security 6.1+
+                .csrf(csrf -> csrf.disable())
+                .exceptionHandling(exception ->
+                        exception.authenticationEntryPoint(jwtAuthenticationEntryPoint))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/influencer/register",
@@ -34,8 +43,8 @@ public class SecurityConfiguration {
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
-                .sessionManagement(sess -> sess
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .sessionManagement(sess ->
+                        sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 );
 
         http.addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
@@ -52,5 +61,4 @@ public class SecurityConfiguration {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
 }
