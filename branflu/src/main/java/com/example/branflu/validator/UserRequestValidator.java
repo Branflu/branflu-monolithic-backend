@@ -1,5 +1,6 @@
 package com.example.branflu.validator;
 
+import com.example.branflu.entity.Link;
 import com.example.branflu.enums.ErrorData;
 import com.example.branflu.exception.BadRequestException;
 import com.example.branflu.payload.request.InfluencerRequest;
@@ -8,11 +9,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
 
-import java.util.Objects;
+import java.util.List;
 
 @Component
 @Slf4j
 public class UserRequestValidator {
+
     private final EmailValidator emailValidator;
     private final LinkValidator linkValidator;
 
@@ -20,22 +22,43 @@ public class UserRequestValidator {
         this.emailValidator = emailValidator;
         this.linkValidator = linkValidator;
     }
-    public void validateInfluencer(InfluencerRequest influencerRequest){
-        log.info("{} >> validate -> profileRequest: {}",getClass().getSimpleName(),influencerRequest.toString());
 
-        validateLink(influencerRequest);
+    /**
+     * Validates an influencer request (name, email, and links)
+     */
+    public void validateInfluencer(InfluencerRequest influencerRequest) {
+        log.info("{} >> validateInfluencer -> request: {}", getClass().getSimpleName(), influencerRequest);
+        validateCommonFields(influencerRequest);
+        validateLinks(influencerRequest);
     }
-    private void validateName(UserRequest userRequest){
-        if(Objects.isNull(userRequest.getName()) || ObjectUtils.isEmpty(userRequest.getName())){
+
+    /**
+     * Validates a business request (name and email only)
+     */
+    public void validateBusiness(UserRequest businessRequest) {
+        log.info("{} >> validateBusiness -> request: {}", getClass().getSimpleName(), businessRequest);
+        validateCommonFields(businessRequest);
+    }
+
+    /**
+     * Shared name + email validator
+     */
+    private void validateCommonFields(UserRequest userRequest) {
+        validateName(userRequest);
+        validateEmail(userRequest);
+    }
+
+    private void validateName(UserRequest userRequest) {
+        if (ObjectUtils.isEmpty(userRequest.getName())) {
             throw new BadRequestException(ErrorData.NAME_MANDATORY);
         }
-        if(userRequest.getName().length() > 100){
+        if (userRequest.getName().length() > 100) {
             throw new BadRequestException(ErrorData.NAME_LIMIT_EXCEED);
         }
-
     }
-    private void validateEmail(UserRequest userRequest){
-        if(!ObjectUtils.isEmpty(userRequest.getPayPalEmail())){
+
+    private void validateEmail(UserRequest userRequest) {
+        if (!ObjectUtils.isEmpty(userRequest.getPayPalEmail())) {
             emailValidator.isValidEmail(
                     userRequest.getPayPalEmail(),
                     () -> new BadRequestException(ErrorData.PAYPAL_EMAIL_INVALID)
@@ -43,14 +66,17 @@ public class UserRequestValidator {
         }
     }
 
-    private void validateLink(InfluencerRequest influencerRequest){
-        if (!ObjectUtils.isEmpty(influencerRequest.getLink())){
-            linkValidator.isValidLink(
-                    influencerRequest.getLink(),
-                    () -> new BadRequestException(ErrorData.LINK_INVALID)
-            );
+    /**
+     * Validates each link in the influencer request
+     */
+    private void validateLinks(InfluencerRequest influencerRequest) {
+        List<Link> links = influencerRequest.getLink();
+        if (ObjectUtils.isEmpty(links)) {
+            throw new BadRequestException(ErrorData.LINK_INVALID);
+        }
 
-
+        for (Link link : links) {
+            linkValidator.isValidLink(link, () -> new BadRequestException(ErrorData.LINK_INVALID));
         }
     }
 }

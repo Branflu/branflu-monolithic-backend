@@ -13,7 +13,6 @@ public class LinkValidator {
 
     private static final Logger log = LoggerFactory.getLogger(LinkValidator.class);
 
-    // Combined pattern for all allowed platforms
     private static final Pattern LINK_PATTERN = Pattern.compile(
             "^(https?://)?(www\\.)?" +
                     "(" +
@@ -28,14 +27,14 @@ public class LinkValidator {
                     "linkedin\\.com|" +
                     "reddit\\.com|" +
                     "twitch\\.tv|" +
-                    "t\\.me|" +                          // Telegram
-                    "wa\\.me|" +                        // WhatsApp short links
-                    "chat\\.whatsapp\\.com|" +          // WhatsApp group invite links
+                    "t\\.me|" +
+                    "wa\\.me|" +
+                    "chat\\.whatsapp\\.com|" +
                     "threads\\.net|" +
                     "clubhouse\\.com|" +
                     "discord\\.com|" +
                     "discord\\.gg|" +
-                    "medium\\.com|" +                   // Blog
+                    "medium\\.com|" +
                     "substack\\.com|" +
                     "blogspot\\.com|" +
                     "wordpress\\.com" +
@@ -45,15 +44,16 @@ public class LinkValidator {
     );
 
     public void isValidLink(Link link, Supplier<? extends RuntimeException> throwableSupplier) {
-        if (link == null || link.getUrl() == null) {
-            log.warn("LinkValidator >> Link or URL is null");
+        if (link == null || link.getUrl() == null || link.getUrl().trim().isEmpty()) {
+            log.warn("LinkValidator >> Link or URL is null or empty");
             throw throwableSupplier.get();
         }
 
-        String url = link.getUrl();
+        String url = link.getUrl().trim();
         log.info("LinkValidator >> isValidLink -> {}", url);
 
         if (!LINK_PATTERN.matcher(url).matches()) {
+            log.warn("LinkValidator >> Invalid format -> {}", url);
             throw throwableSupplier.get();
         }
     }

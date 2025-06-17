@@ -1,8 +1,7 @@
 package com.example.branflu.enums;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 
-import lombok.Getter;
-
-@Getter
 public enum Category {
     FASHION("Fashion"),
     BEAUTY("Beauty"),
@@ -27,5 +26,20 @@ public enum Category {
 
     Category(String value) {
         this.value = value;
+    }
+
+    @JsonValue
+    public String getValue() {
+        return value;
+    }
+
+    @JsonCreator
+    public static Category fromValue(String value) {
+        for (Category category : Category.values()) {
+            if (category.value.equalsIgnoreCase(value)) {
+                return category;
+            }
+        }
+        throw new IllegalArgumentException("Invalid category: " + value);
     }
 }

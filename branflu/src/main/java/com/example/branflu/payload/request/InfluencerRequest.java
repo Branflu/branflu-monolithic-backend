@@ -14,12 +14,12 @@ import java.util.List;
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class InfluencerRequest {
+public class InfluencerRequest extends UserRequest{
     @NotBlank       private String name;
     @NotBlank       private String payPalEmail;
     @NotBlank       private String password;
     @NotEmpty       private List<Platform> platforms;
     @NotBlank       private Category category;
     @NotNull
-    private Link link;
+    private List<Link> link;
 }
