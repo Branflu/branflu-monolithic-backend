@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 public class Influencer extends User {
 
-    @ElementCollection(targetClass = Platform.class)
+
     @OneToMany(mappedBy = "influencer", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InfluencerPlatform> platforms;
 

@@ -20,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -38,6 +39,7 @@ public class UserServiceImplementation implements UserService {
     private final InfluencerRequestToInfluencerTransformer influencerRequestToInfluencerTransformer;
     private final BusinessRequestToBusinessTransformer businessRequestToBusinessTransformer;
     private final BusinessToBusinessResponseTransformer businessResponseTransformer;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public ResponseEntity<UserResponse> registerAsInfluencer(InfluencerRequest influencerRequest) {
@@ -60,6 +62,7 @@ public class UserServiceImplementation implements UserService {
                     Influencer newInfluencer = influencerRequestToInfluencerTransformer.transform(influencerRequest);
                     newInfluencer.setRole(Role.INFLUENCER);
                     newInfluencer.setCreatedAt(new Date());
+                    newInfluencer.setPassword(passwordEncoder.encode(influencerRequest.getPassword()));
                     return newInfluencer;
                 });
 
