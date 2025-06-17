@@ -15,7 +15,6 @@ public class EmailValidator {
 
     }
 
-
     public void isValidEmail(String email, Supplier<? extends RuntimeException> throwableSupplier) {
         log.info("EmailValidator >> isValidEmail -> {}", email);
         Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
