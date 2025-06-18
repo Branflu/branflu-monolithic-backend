@@ -6,7 +6,7 @@ import com.example.branflu.payload.request.JWTAuthenticationRequest;
 import com.example.branflu.payload.response.JWTAuthenticationResponse;
 import com.example.branflu.payload.response.UserResponse;
 import com.example.branflu.security.CustomUserDetailsService;
-import com.example.branflu.security.JWTTokenHelper;
+
 
 import com.example.branflu.security.JwtService;
 import com.example.branflu.service.UserService;
@@ -18,13 +18,16 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.AuthenticationException;
+
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class AuthenticationController {
 
     private final UserService userService;
     private final AuthenticationManager authenticationManager;
-    private final JWTTokenHelper jwtTokenHelper;
+
     private final CustomUserDetailsService userDetailsService;
     private final JwtService jwtService;
 
@@ -60,5 +63,8 @@ public class AuthenticationController {
         jwtAuthenticationResponse.setToken(token);
         return new ResponseEntity<>(jwtAuthenticationResponse, HttpStatus.CREATED);
     }
+
+
+
 
 }

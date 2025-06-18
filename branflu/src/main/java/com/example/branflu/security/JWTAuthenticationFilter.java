@@ -27,7 +27,9 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         String path = request.getServletPath();
-        return path.equals("/influencer/register") || path.equals("/login/influencer") || path.equals("/business/register");
+        boolean shouldSkip = path.equals("/influencer/register") || path.equals("/login/influencer") || path.equals("/business/register");
+        System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: " + shouldSkip);
+        return shouldSkip;
     }
 
     @Override
@@ -40,18 +42,33 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
         final String jwt;
         final String username;
 
+        System.out.println("[JWT Filter] Authorization Header: " + authHeader);
+
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            System.out.println("[JWT Filter] No JWT token found in header");
             filterChain.doFilter(request, response);
             return;
         }
 
         jwt = authHeader.substring(7);
-        username = jwtService.extractUsername(jwt);
+        System.out.println("[JWT Filter] Extracted JWT: " + jwt);
+
+        try {
+            username = jwtService.extractUsername(jwt);
+            System.out.println("[JWT Filter] Extracted Username: " + username);
+        } catch (Exception e) {
+            System.out.println("[JWT Filter] Failed to extract username: " + e.getMessage());
+            filterChain.doFilter(request, response);
+            return;
+        }
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+            System.out.println("[JWT Filter] Loaded UserDetails: " + userDetails.getUsername());
 
             if (jwtService.isTokenValid(jwt, userDetails)) {
+                System.out.println("[JWT Filter] Token is valid");
+
                 UsernamePasswordAuthenticationToken authToken =
                         new UsernamePasswordAuthenticationToken(
                                 userDetails, null, userDetails.getAuthorities());
@@ -60,7 +77,11 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
                         new WebAuthenticationDetailsSource().buildDetails(request));
 
                 SecurityContextHolder.getContext().setAuthentication(authToken);
+            } else {
+                System.out.println("[JWT Filter] Invalid token");
             }
+        } else {
+            System.out.println("[JWT Filter] Username is null or already authenticated");
         }
 
         filterChain.doFilter(request, response);

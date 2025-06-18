@@ -39,7 +39,8 @@ public class SecurityConfiguration {
                         .requestMatchers(
                                 "/influencer/register",
                                 "/business/register",
-                                "/login/influencer"
+                                "/login/influencer",
+                                "/login/buisness"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

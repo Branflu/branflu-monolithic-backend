@@ -5,6 +5,7 @@ import com.example.branflu.entity.Influencer;
 import com.example.branflu.entity.InfluencerPlatform;
 import com.example.branflu.enums.Platform;
 import com.example.branflu.enums.Role;
+import com.example.branflu.exception.ResourceNotFoundException;
 import com.example.branflu.payload.request.BusinessRequest;
 import com.example.branflu.payload.request.InfluencerRequest;
 import com.example.branflu.payload.response.UserResponse;
@@ -20,12 +21,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -122,5 +126,26 @@ public class UserServiceImplementation implements UserService {
         UserResponse response = businessResponseTransformer.transform(saved);
         return ResponseEntity.ok(response);
     }
+
+    @Override
+    public ResponseEntity<List<UserResponse>> getAllInfluencer() {
+        List<Influencer> allInfluencer=this.influencerRepository.findAll();
+
+        List<UserResponse> responseList=allInfluencer.stream()
+                .map(influencerToInfluencerResponseTransformer::transform)
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(responseList);
+
+    }
+
+    @Override
+    public ResponseEntity<UserResponse> getInfluencerById(UUID userId) {
+        Influencer influencer = influencerRepository.findById(userId)
+                .orElseThrow(()-> new ResourceNotFoundException("Influencer","userId",userId.toString()));
+        UserResponse response=influencerToInfluencerResponseTransformer.transform(influencer);
+        return ResponseEntity.ok(response);
+    }
+
 
 }
