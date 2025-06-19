@@ -13,5 +13,6 @@ public class Link {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long linkID;
 
+    @Column(unique = true, nullable = false)
     private String url;
 }

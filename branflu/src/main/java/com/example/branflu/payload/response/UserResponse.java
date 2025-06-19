@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Getter
@@ -20,5 +21,5 @@ public class UserResponse {
     private String payPalEmail;
     private Role role;
     private Date createdAt;
-    private String password;
+    private List<PlatformLinkResponse> platforms;
 }

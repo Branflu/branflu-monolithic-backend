@@ -40,7 +40,9 @@ public class SecurityConfiguration {
                                 "/influencer/register",
                                 "/business/register",
                                 "/login/influencer",
-                                "/login/buisness"
+                                "/login/buisness",
+                                "/api/youtube/auth",
+                                "/api/youtube/callback"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

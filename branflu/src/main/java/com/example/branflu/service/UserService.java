@@ -13,6 +13,9 @@ public interface UserService {
     ResponseEntity<UserResponse> registerAsBusiness(BusinessRequest businessRequest);
     ResponseEntity<List<UserResponse>> getAllInfluencer();
     ResponseEntity<UserResponse> getInfluencerById(UUID userId);
+    ResponseEntity<String> deleteLoggedInInfluencer();
+
+
 
 
 }

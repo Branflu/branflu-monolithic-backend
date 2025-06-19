@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.Set;
 
 @Component
 public class JWTAuthenticationFilter extends OncePerRequestFilter {
@@ -24,10 +25,19 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
+    // ⛔ List of paths that don't require JWT filtering
+    private static final Set<String> EXCLUDED_PATHS = Set.of(
+            "/influencer/register",
+            "/login/influencer",
+            "/business/register",
+            "/api/youtube/auth",
+            "/api/youtube/callback"
+    );
+
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         String path = request.getServletPath();
-        boolean shouldSkip = path.equals("/influencer/register") || path.equals("/login/influencer") || path.equals("/business/register");
+        boolean shouldSkip = EXCLUDED_PATHS.contains(path);
         System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: " + shouldSkip);
         return shouldSkip;
     }

@@ -16,7 +16,5 @@ public class Influencer extends User {
     @OneToMany(mappedBy = "influencer", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InfluencerPlatform> platforms;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "link_id", referencedColumnName = "linkID", unique = true)
-    private Link link;
+
 }

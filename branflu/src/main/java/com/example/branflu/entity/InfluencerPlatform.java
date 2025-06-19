@@ -1,12 +1,8 @@
 package com.example.branflu.entity;
 
-import com.example.branflu.entity.Influencer;
 import com.example.branflu.enums.Platform;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
@@ -25,4 +21,12 @@ public class InfluencerPlatform {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "influencer_id", nullable = false)
     private Influencer influencer;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "link_id", referencedColumnName = "linkID", unique = true)
+    private Link link;
+
+    private Long audienceCount;
+    private Long averageViews;
+    private Double engagementRate;
 }

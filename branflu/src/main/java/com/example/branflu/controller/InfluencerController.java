@@ -5,10 +5,8 @@ import com.example.branflu.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
@@ -34,6 +32,16 @@ public class InfluencerController {
     public ResponseEntity<UserResponse> getInfluencerById(@PathVariable UUID userId) {
         return userService.getInfluencerById(userId);
     }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('INFLUENCER')")
+    public ResponseEntity<String> deleteLoggedInInfluencer() {
+        return userService.deleteLoggedInInfluencer();
+    }
+
+
+
+
 
 
 }

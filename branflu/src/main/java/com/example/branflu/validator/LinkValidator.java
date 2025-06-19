@@ -43,18 +43,11 @@ public class LinkValidator {
             Pattern.CASE_INSENSITIVE
     );
 
-    public void isValidLink(Link link, Supplier<? extends RuntimeException> throwableSupplier) {
-        if (link == null || link.getUrl() == null || link.getUrl().trim().isEmpty()) {
-            log.warn("LinkValidator >> Link or URL is null or empty");
-            throw throwableSupplier.get();
-        }
-
-        String url = link.getUrl().trim();
-        log.info("LinkValidator >> isValidLink -> {}", url);
-
-        if (!LINK_PATTERN.matcher(url).matches()) {
-            log.warn("LinkValidator >> Invalid format -> {}", url);
-            throw throwableSupplier.get();
+    public void isValidLink(String url, Supplier<RuntimeException> exceptionSupplier) {
+        if (url == null || url.isBlank() || !url.startsWith("http")) {
+            throw exceptionSupplier.get();
         }
     }
+
+
 }

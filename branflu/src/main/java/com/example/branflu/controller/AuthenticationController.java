@@ -20,6 +20,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.AuthenticationException;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
@@ -48,7 +49,7 @@ public class AuthenticationController {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
-                            jwtAuthenticationRequest.getPayPalEMail(),
+                            jwtAuthenticationRequest.getPayPalEmail(),
                             jwtAuthenticationRequest.getPassword()
                     )
             );
@@ -56,13 +57,15 @@ public class AuthenticationController {
             throw new Exception("Invalid username or password", e);
         }
 
-        UserDetails userDetails = userDetailsService.loadUserByUsername(jwtAuthenticationRequest.getPayPalEMail());
+        UserDetails userDetails = userDetailsService.loadUserByUsername(jwtAuthenticationRequest.getPayPalEmail());
         String token = jwtService.generateToken(userDetails);
 
         JWTAuthenticationResponse jwtAuthenticationResponse = new JWTAuthenticationResponse();
         jwtAuthenticationResponse.setToken(token);
         return new ResponseEntity<>(jwtAuthenticationResponse, HttpStatus.CREATED);
     }
+
+
 
 
 

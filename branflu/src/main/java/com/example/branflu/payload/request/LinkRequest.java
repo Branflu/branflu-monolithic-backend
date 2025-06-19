@@ -5,7 +5,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class JWTAuthenticationRequest {
-    private String payPalEmail;
-    private String password;
+public class LinkRequest {
+    private String url;
 }

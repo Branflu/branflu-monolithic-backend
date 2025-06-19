@@ -5,6 +5,7 @@ import com.example.branflu.entity.Link;
 import com.example.branflu.enums.ErrorData;
 import com.example.branflu.exception.BadRequestException;
 import com.example.branflu.payload.request.InfluencerRequest;
+import com.example.branflu.payload.request.LinkRequest;
 import com.example.branflu.payload.request.UserRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -71,13 +72,19 @@ public class UserRequestValidator {
      * Validates each link in the influencer request
      */
     private void validateLinks(InfluencerRequest influencerRequest) {
-        List<Link> links = influencerRequest.getLink();
+        List<LinkRequest> links = influencerRequest.getLink();
+
         if (ObjectUtils.isEmpty(links)) {
             throw new BadRequestException(ErrorData.LINK_INVALID);
         }
 
-        for (Link link : links) {
-            linkValidator.isValidLink(link, () -> new BadRequestException(ErrorData.LINK_INVALID));
+        for (LinkRequest linkRequest : links) {
+            String url = linkRequest.getUrl();
+            log.info("Validating link: {}", url); // 👈 add this line
+            linkValidator.isValidLink(url, () -> new BadRequestException(ErrorData.LINK_INVALID));
         }
     }
+
+
+
 }
