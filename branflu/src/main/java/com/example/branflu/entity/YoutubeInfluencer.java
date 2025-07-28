@@ -9,7 +9,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class YoutubeEntity {
+public class YoutubeInfluencer {
 
     @Id
     private String channelId;

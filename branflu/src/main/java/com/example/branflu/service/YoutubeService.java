@@ -1,6 +1,6 @@
 package com.example.branflu.service;
 
-import com.example.branflu.entity.YoutubeEntity;
+import com.example.branflu.entity.YoutubeInfluencer;
 import com.example.branflu.repository.YoutubeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -146,7 +146,7 @@ public class YoutubeService {
         }
 
         // Save to DB
-        YoutubeEntity youTubeChannel = new YoutubeEntity();
+        YoutubeInfluencer youTubeChannel = new YoutubeInfluencer();
         youTubeChannel.setChannelId((String) channel.get("id"));
         youTubeChannel.setTitle((String) snippet.get("title"));
         youTubeChannel.setSubscribers(Long.parseLong(statistics.get("subscriberCount").toString()));

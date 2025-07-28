@@ -42,7 +42,13 @@ public class SecurityConfiguration {
                                 "/login/influencer",
                                 "/login/buisness",
                                 "/api/youtube/auth",
-                                "/api/youtube/callback"
+                                "/api/youtube/callback",
+                                "/api/facebook/login",
+                                "/api/facebook/callback",
+                                "/api/instagram/callback",
+                                "/api/instagram/login",
+                                "/api/instagram/webhook"
+
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
