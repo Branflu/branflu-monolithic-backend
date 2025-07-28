@@ -4,7 +4,7 @@ import com.example.branflu.entity.FacebookUser;
 import com.example.branflu.repository.FacebookUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.*;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -56,8 +56,8 @@ public class FacebookService {
             profilePictureUrl = (String) pictureData.get("url");
         }
 
-        // OPTIONAL: Get followers count if connected page info available
-        Integer followers = fetchFollowerCount(accessToken);
+        Integer facebookFollowersCount = fetchFacebookFollowerCount(accessToken);
+        Integer instagramFollowersCount = fetchInstagramFollowerCount(accessToken);
 
         FacebookUser user = facebookUserRepository.findByFacebookUserId(userId)
                 .orElse(FacebookUser.builder()
@@ -69,15 +69,15 @@ public class FacebookService {
         user.setEmail(email);
         user.setProfilePictureUrl(profilePictureUrl);
         user.setAccessToken(accessToken);
-        user.setFollowersCount(followers);
+        user.setFacebookFollowersCount(facebookFollowersCount);
+        user.setInstagramFollowersCount(instagramFollowersCount);
         user.setUpdatedAt(LocalDateTime.now());
 
         return facebookUserRepository.save(user);
     }
 
-    private Integer fetchFollowerCount(String accessToken) {
+    private Integer fetchFacebookFollowerCount(String accessToken) {
         try {
-            // Step 1: Get pages of user
             String pagesUrl = "https://graph.facebook.com/me/accounts?access_token=" + accessToken;
             Map pages = restTemplate.getForObject(pagesUrl, Map.class);
             if (pages != null && pages.containsKey("data")) {
@@ -86,11 +86,40 @@ public class FacebookService {
                     String pageId = (String) pagesList.get(0).get("id");
                     String pageAccessToken = (String) pagesList.get(0).get("access_token");
 
-                    // Step 2: Fetch followers count
                     String followerUrl = "https://graph.facebook.com/" + pageId + "?fields=followers_count&access_token=" + pageAccessToken;
                     Map result = restTemplate.getForObject(followerUrl, Map.class);
                     if (result != null && result.containsKey("followers_count")) {
                         return (Integer) result.get("followers_count");
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private Integer fetchInstagramFollowerCount(String accessToken) {
+        try {
+            String pagesUrl = "https://graph.facebook.com/me/accounts?access_token=" + accessToken;
+            Map pages = restTemplate.getForObject(pagesUrl, Map.class);
+            if (pages != null && pages.containsKey("data")) {
+                var pagesList = (java.util.List<Map<String, Object>>) pages.get("data");
+                if (!pagesList.isEmpty()) {
+                    String pageId = (String) pagesList.get(0).get("id");
+                    String pageAccessToken = (String) pagesList.get(0).get("access_token");
+
+                    String instaAccountUrl = "https://graph.facebook.com/" + pageId + "?fields=instagram_business_account&access_token=" + pageAccessToken;
+                    Map pageDetails = restTemplate.getForObject(instaAccountUrl, Map.class);
+                    if (pageDetails != null && pageDetails.containsKey("instagram_business_account")) {
+                        Map instaData = (Map) pageDetails.get("instagram_business_account");
+                        String instagramId = (String) instaData.get("id");
+
+                        String followersUrl = "https://graph.facebook.com/" + instagramId + "?fields=followers_count&access_token=" + pageAccessToken;
+                        Map result = restTemplate.getForObject(followersUrl, Map.class);
+                        if (result != null && result.containsKey("followers_count")) {
+                            return (Integer) result.get("followers_count");
+                        }
                     }
                 }
             }

@@ -30,6 +30,8 @@ public class FacebookUser {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
-    private Integer followersCount; // Extend this when we get follower info
+    private Integer facebookFollowersCount;  // Facebook Page followers
+
+    private Integer instagramFollowersCount;  // Extend this when we get follower info
 
 }

@@ -25,7 +25,7 @@ public class FacebookController {
         String facebookAuthUrl = "https://www.facebook.com/v18.0/dialog/oauth"
                 + "?client_id=" + clientId
                 + "&redirect_uri=" + redirectUri
-                + "&scope=email,public_profile,pages_show_list,pages_read_engagement"
+                + "&scope=email,public_profile,pages_show_list,pages_read_engagement,instagram_basic,instagram_content_publish,instagram_manage_insights"
                 + "&response_type=code";
         return new RedirectView(facebookAuthUrl);
     }
