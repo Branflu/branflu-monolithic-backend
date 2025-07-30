@@ -120,6 +120,8 @@ public class UserServiceImplementation implements UserService {
 
     @Override
     public ResponseEntity<UserResponse> registerAsBusiness(BusinessRequest businessRequest) {
+        System.out.println("✅ Inside registerAsBusiness service");
+        System.out.println("📨 Business Name: " + businessRequest.getName());
         log.info("Starting business registration for PayPal Email: {}", businessRequest.getPayPalEmail());
 
         try {

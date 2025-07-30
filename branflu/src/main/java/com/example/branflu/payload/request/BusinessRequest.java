@@ -1,5 +1,6 @@
 package com.example.branflu.payload.request;
 
+import com.example.branflu.enums.Category;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,5 +9,8 @@ import lombok.Setter;
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BusinessRequest extends UserRequest {
-    // No need for constructors here
+    private String imageUrl;
+    private String websiteUrl;
+    private String Bio;
+    private Category category;
 }

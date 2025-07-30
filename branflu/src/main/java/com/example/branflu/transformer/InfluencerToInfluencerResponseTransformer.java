@@ -34,7 +34,6 @@ public class InfluencerToInfluencerResponseTransformer {
                 .payPalEmail(influencer.getPayPalEmail())
                 .role(influencer.getRole())
                 .createdAt(influencer.getCreatedAt())
-                .platforms(platforms)
                 .build();
     }
 }

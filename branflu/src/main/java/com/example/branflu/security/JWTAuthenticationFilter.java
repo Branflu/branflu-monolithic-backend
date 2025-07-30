@@ -29,7 +29,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     private static final Set<String> EXCLUDED_PATHS = Set.of(
             "/influencer/register",
             "/login/influencer",
-            "/business/register",
+            "/api/business/register",
             "/api/youtube/auth",
             "/api/youtube/callback",
             "/api/facebook/login",

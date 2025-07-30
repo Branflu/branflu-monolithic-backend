@@ -33,5 +33,11 @@ public class FacebookUser {
     private Integer facebookFollowersCount;  // Facebook Page followers
 
     private Integer instagramFollowersCount;  // Extend this when we get follower info
+    private String instagramUsername;
+    @Column(name = "insta_profile_picture_url", length = 512)
+    private String instagramProfilePictureUrl;
+    private String instagramBio;
+    private Integer instagramMediaCount;
+
 
 }

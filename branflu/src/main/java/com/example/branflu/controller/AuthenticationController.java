@@ -24,6 +24,7 @@ import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/api")
 public class AuthenticationController {
 
     private final UserService userService;
@@ -41,6 +42,8 @@ public class AuthenticationController {
     }
     @PostMapping("/business/register")
     public ResponseEntity<UserResponse> registerAsBusiness(@RequestBody BusinessRequest request) {
+        System.out.println("➡️ Received registerAsBusiness request");
+        System.out.println("📦 Payload: " + request);
         return userService.registerAsBusiness(request);
     }
 

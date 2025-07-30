@@ -56,9 +56,6 @@ public class FacebookService {
             profilePictureUrl = (String) pictureData.get("url");
         }
 
-        Integer facebookFollowersCount = fetchFacebookFollowerCount(accessToken);
-        Integer instagramFollowersCount = fetchInstagramFollowerCount(accessToken);
-
         FacebookUser user = facebookUserRepository.findByFacebookUserId(userId)
                 .orElse(FacebookUser.builder()
                         .facebookUserId(userId)
@@ -69,6 +66,10 @@ public class FacebookService {
         user.setEmail(email);
         user.setProfilePictureUrl(profilePictureUrl);
         user.setAccessToken(accessToken);
+
+        Integer facebookFollowersCount = fetchFacebookFollowerCount(accessToken);
+        Integer instagramFollowersCount = fetchInstagramDetailsAndSave(accessToken, user);
+
         user.setFacebookFollowersCount(facebookFollowersCount);
         user.setInstagramFollowersCount(instagramFollowersCount);
         user.setUpdatedAt(LocalDateTime.now());
@@ -86,7 +87,8 @@ public class FacebookService {
                     String pageId = (String) pagesList.get(0).get("id");
                     String pageAccessToken = (String) pagesList.get(0).get("access_token");
 
-                    String followerUrl = "https://graph.facebook.com/" + pageId + "?fields=followers_count&access_token=" + pageAccessToken;
+                    String followerUrl = "https://graph.facebook.com/" + pageId
+                            + "?fields=followers_count&access_token=" + pageAccessToken;
                     Map result = restTemplate.getForObject(followerUrl, Map.class);
                     if (result != null && result.containsKey("followers_count")) {
                         return (Integer) result.get("followers_count");
@@ -99,25 +101,38 @@ public class FacebookService {
         return null;
     }
 
-    private Integer fetchInstagramFollowerCount(String accessToken) {
+    private Integer fetchInstagramDetailsAndSave(String accessToken, FacebookUser user) {
         try {
             String pagesUrl = "https://graph.facebook.com/me/accounts?access_token=" + accessToken;
             Map pages = restTemplate.getForObject(pagesUrl, Map.class);
+
             if (pages != null && pages.containsKey("data")) {
                 var pagesList = (java.util.List<Map<String, Object>>) pages.get("data");
+
                 if (!pagesList.isEmpty()) {
                     String pageId = (String) pagesList.get(0).get("id");
                     String pageAccessToken = (String) pagesList.get(0).get("access_token");
 
-                    String instaAccountUrl = "https://graph.facebook.com/" + pageId + "?fields=instagram_business_account&access_token=" + pageAccessToken;
+                    String instaAccountUrl = "https://graph.facebook.com/" + pageId
+                            + "?fields=instagram_business_account&access_token=" + pageAccessToken;
                     Map pageDetails = restTemplate.getForObject(instaAccountUrl, Map.class);
+
                     if (pageDetails != null && pageDetails.containsKey("instagram_business_account")) {
                         Map instaData = (Map) pageDetails.get("instagram_business_account");
                         String instagramId = (String) instaData.get("id");
 
-                        String followersUrl = "https://graph.facebook.com/" + instagramId + "?fields=followers_count&access_token=" + pageAccessToken;
-                        Map result = restTemplate.getForObject(followersUrl, Map.class);
-                        if (result != null && result.containsKey("followers_count")) {
+                        String profileUrl = "https://graph.facebook.com/" + instagramId
+                                + "?fields=username,profile_picture_url,biography,followers_count,media_count"
+                                + "&access_token=" + pageAccessToken;
+
+                        Map result = restTemplate.getForObject(profileUrl, Map.class);
+                        if (result != null) {
+                            user.setInstagramUsername((String) result.get("username"));
+                            user.setInstagramProfilePictureUrl((String) result.get("profile_picture_url"));
+                            user.setInstagramBio((String) result.get("biography"));
+                            user.setInstagramFollowersCount((Integer) result.get("followers_count"));
+                            user.setInstagramMediaCount((Integer) result.get("media_count"));
+
                             return (Integer) result.get("followers_count");
                         }
                     }

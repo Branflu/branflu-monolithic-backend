@@ -38,7 +38,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/influencer/register",
-                                "/business/register",
+                                "/api/business/register",
                                 "/login/influencer",
                                 "/login/buisness",
                                 "/api/youtube/auth",

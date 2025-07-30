@@ -1,5 +1,6 @@
 package com.example.branflu.entity;
 
+import com.example.branflu.enums.Category;
 import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,5 +9,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Business extends User {
-    // Inherits category from User
+    private String imageUrl;
+    private String websiteUrl;
+    private String Bio;
+    private Category category;
 }
