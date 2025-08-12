@@ -7,12 +7,12 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" />
         </processorPath>
-        <module name="branflu.branflu.main" />
+        <module name="branflu.branflu.main~2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="branflu.branflu.main~2" target="17" />
-      <module name="branflu.branflu.test~1" target="17" />
+      <module name="branflu.branflu.main" target="17" />
+      <module name="branflu.branflu.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
