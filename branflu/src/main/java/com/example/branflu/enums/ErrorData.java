@@ -46,6 +46,7 @@ public enum ErrorData {
     NAME_MANDATORY("BRANFLU__ERROR-2002", "Name mandatory" ),
     NAME_LIMIT_EXCEED("BRANFLU__ERROR-2003", "Name length limit exceeded"),
     PAYPAL_EMAIL_INVALID("BRANFLU__ERROR-2004", "PayPal email is invalid"),
+    PAYPAL_EMAIL_EXIST("BRANFLU__ERROR-2004", "PayPal email already exist"),
     LINK_INVALID("BRANFLU__ERROR-2005", "Platform link is invalid"),;
 
     private final String code;

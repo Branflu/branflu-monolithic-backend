@@ -1,24 +1,24 @@
-2025-07-30T13:11:59.720+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 20892 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:11:59.724+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:11:59.779+05:30  INFO 20892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-30T13:11:59.780+05:30  INFO 20892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-30T13:12:00.717+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:12:00.806+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:12:01.721+05:30  INFO 20892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:12:01.742+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:12:01.743+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:12:01.843+05:30  INFO 20892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:12:01.844+05:30  INFO 20892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2064 ms
-2025-07-30T13:12:02.081+05:30  INFO 20892 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:12:02.220+05:30  INFO 20892 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-07-30T13:12:02.275+05:30  INFO 20892 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:12:02.612+05:30  INFO 20892 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:12:02.648+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T13:12:03.127+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14fdb386
-2025-07-30T13:12:03.131+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T13:12:03.212+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:12:03.213+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:12:03.236+05:30  INFO 20892 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-15T22:20:40.224+05:30  INFO 18136 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 18136 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
+2025-08-15T22:20:40.233+05:30  INFO 18136 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T22:20:40.292+05:30  INFO 18136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-15T22:20:40.292+05:30  INFO 18136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-15T22:20:41.203+05:30  INFO 18136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T22:20:41.292+05:30  INFO 18136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2025-08-15T22:20:41.927+05:30  INFO 18136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-15T22:20:41.953+05:30  INFO 18136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T22:20:41.954+05:30  INFO 18136 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-15T22:20:42.032+05:30  INFO 18136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T22:20:42.032+05:30  INFO 18136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
+2025-08-15T22:20:42.184+05:30  INFO 18136 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T22:20:42.272+05:30  INFO 18136 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-08-15T22:20:42.322+05:30  INFO 18136 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T22:20:42.691+05:30  INFO 18136 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T22:20:42.727+05:30  INFO 18136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T22:20:43.189+05:30  INFO 18136 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d084dd2
+2025-08-15T22:20:43.191+05:30  INFO 18136 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T22:20:43.268+05:30  WARN 18136 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T22:20:43.269+05:30  WARN 18136 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T22:20:43.294+05:30  INFO 18136 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -26,131 +26,317 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-30T13:12:04.769+05:30  INFO 20892 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:12:04.889+05:30  INFO 20892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:12:05.318+05:30  INFO 20892 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-07-30T13:12:05.391+05:30  WARN 20892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T13:12:05.920+05:30  INFO 20892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-30T13:12:05.968+05:30  INFO 20892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T13:12:05.977+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 6.761 seconds (process running for 7.575)
-2025-07-30T13:14:09.908+05:30  INFO 20892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T13:14:09.909+05:30  INFO 20892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T13:14:09.912+05:30  INFO 20892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-07-30T13:20:17.647+05:30  INFO 20892 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-07-30T13:20:17.669+05:30  INFO 20892 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T13:20:17.878+05:30  INFO 20892 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T13:20:17.894+05:30  INFO 20892 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:17.912+05:30  INFO 20892 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T13:20:17.941+05:30  INFO 20892 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-30T13:20:18.172+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 20892 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:20:18.173+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:20:18.708+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:20:18.741+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:20:19.023+05:30  INFO 20892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:20:19.025+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:20:19.026+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:20:19.056+05:30  INFO 20892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:20:19.057+05:30  INFO 20892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 879 ms
-2025-07-30T13:20:19.137+05:30  INFO 20892 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:20:19.143+05:30  INFO 20892 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:20:19.158+05:30  INFO 20892 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:20:19.160+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-07-30T13:20:19.285+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4de97740
-2025-07-30T13:20:19.285+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-07-30T13:20:19.290+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:20:19.290+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:20:19.290+05:30  INFO 20892 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T13:20:19.487+05:30  INFO 20892 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:20:19.599+05:30  INFO 20892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:19.751+05:30  WARN 20892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationController' defined in file [C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main\com\example\branflu\controller\AuthenticationController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.branflu.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2025-07-30T13:20:19.752+05:30  INFO 20892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:19.752+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-07-30T13:20:19.800+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-07-30T13:20:19.800+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2025-07-30T13:20:19.811+05:30  INFO 20892 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2025-08-15T22:20:44.462+05:30  INFO 18136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T22:20:44.611+05:30  INFO 18136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T22:20:45.077+05:30  INFO 18136 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-15T22:20:45.172+05:30  WARN 18136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T22:20:45.677+05:30  INFO 18136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T22:20:45.716+05:30  INFO 18136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-15T22:20:45.724+05:30  INFO 18136 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 6.017 seconds (process running for 6.852)
+2025-08-15T22:30:05.338+05:30  INFO 18136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T22:30:05.354+05:30  INFO 18136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T22:30:05.385+05:30  INFO 18136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2025-08-15T22:30:23.705+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:30:24.109+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : update youtube_influencer set analytics_json=?,image_url=?,last_fetched=?,subscriber_count=?,title=?,total_views=?,video_count=? where channel_id=?
+2025-08-15T22:30:24.935+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.966+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.971+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.975+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.978+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.981+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.989+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.994+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:24.999+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.003+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.008+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.012+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.017+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.021+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.027+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.031+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.035+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.039+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.043+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.047+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.051+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.055+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.059+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.063+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.067+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.071+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.076+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.079+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.085+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.088+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.094+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.099+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.105+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.110+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.113+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.118+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.122+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.126+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.129+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.134+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.137+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.141+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.144+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.149+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.154+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.159+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.163+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.169+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.174+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.178+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.182+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.186+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.190+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.194+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.198+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.202+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.208+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.212+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.217+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.220+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.225+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.229+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.234+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.239+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.245+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.250+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.254+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.260+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.263+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.270+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.275+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.279+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.283+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.286+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.291+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.294+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.298+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.301+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.305+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.308+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.311+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.313+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.317+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.320+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.324+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.327+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.330+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:30:25.364+05:30 DEBUG 18136 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:30:25.392+05:30  WARN 18136 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2025-08-15T22:30:25.392+05:30 ERROR 18136 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'engagement_rate' doesn't have a default value
+2025-08-15T22:30:25.429+05:30 ERROR 18136 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: could not execute statement [Field 'engagement_rate' doesn't have a default value] [insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)]] with root cause
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-07-30T13:20:19.903+05:30 ERROR 20892 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+java.sql.SQLException: Field 'engagement_rate' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:47) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:95) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:682) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:293) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:274) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:324) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:393) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:307) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:223) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:136) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:177) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:95) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:79) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:761) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:745) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy131.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320) ~[spring-orm-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy131.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:636) ~[spring-data-jpa-3.4.4.jar:3.4.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:731) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy145.save(Unknown Source) ~[na:na]
+	at com.example.branflu.service.YoutubeService.handleOAuthCallback(YoutubeService.java:176) ~[main/:na]
+	at com.example.branflu.controller.YoutubeController.handleOAuthCallback(YoutubeController.java:34) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.4.jar:6.4.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
 
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in com.example.branflu.controller.AuthenticationController required a bean of type 'com.example.branflu.service.UserService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.example.branflu.service.UserService' in your configuration.
-
-2025-07-30T13:20:21.450+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 20892 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:20:21.451+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:20:21.774+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:20:21.800+05:30  INFO 20892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:20:21.903+05:30  INFO 20892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:20:21.905+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:20:21.905+05:30  INFO 20892 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:20:21.920+05:30  INFO 20892 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:20:21.920+05:30  INFO 20892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 466 ms
-2025-07-30T13:20:22.168+05:30  INFO 20892 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:20:22.173+05:30  INFO 20892 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:20:22.201+05:30  INFO 20892 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:20:22.207+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-07-30T13:20:22.222+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76133412
-2025-07-30T13:20:22.222+05:30  INFO 20892 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-07-30T13:20:22.229+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:20:22.229+05:30  WARN 20892 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:20:22.229+05:30  INFO 20892 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T13:20:22.356+05:30  INFO 20892 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:20:22.407+05:30  INFO 20892 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:22.488+05:30  INFO 20892 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-07-30T13:20:22.545+05:30  WARN 20892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T13:20:22.878+05:30  INFO 20892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-30T13:20:22.889+05:30  INFO 20892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T13:20:22.973+05:30  INFO 20892 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 1.505 seconds (process running for 504.578)
-2025-07-30T13:20:22.973+05:30  INFO 20892 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-07-30T13:20:32.803+05:30  INFO 20892 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T13:20:33.063+05:30  INFO 20892 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T13:20:33.066+05:30  INFO 20892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:33.067+05:30  INFO 20892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-07-30T13:20:33.071+05:30  INFO 20892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2025-07-30T13:20:38.321+05:30  INFO 21968 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 21968 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:20:38.323+05:30  INFO 21968 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:20:38.376+05:30  INFO 21968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-30T13:20:38.377+05:30  INFO 21968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-30T13:20:39.150+05:30  INFO 21968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:20:39.223+05:30  INFO 21968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:20:39.801+05:30  INFO 21968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:20:39.815+05:30  INFO 21968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:20:39.816+05:30  INFO 21968 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:20:39.869+05:30  INFO 21968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:20:39.870+05:30  INFO 21968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1492 ms
-2025-07-30T13:20:40.010+05:30  INFO 21968 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:20:40.105+05:30  INFO 21968 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-07-30T13:20:40.142+05:30  INFO 21968 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:20:40.450+05:30  INFO 21968 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:20:40.487+05:30  INFO 21968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T13:20:40.864+05:30  INFO 21968 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12a5e480
-2025-07-30T13:20:40.866+05:30  INFO 21968 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T13:20:40.930+05:30  WARN 21968 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:20:40.931+05:30  WARN 21968 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:20:40.951+05:30  INFO 21968 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-15T22:50:54.951+05:30  INFO 18136 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T22:50:55.384+05:30  INFO 18136 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T22:50:55.455+05:30  INFO 18136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T22:50:55.548+05:30  INFO 18136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T22:50:55.570+05:30  INFO 18136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T22:51:03.844+05:30  INFO 20564 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 20564 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
+2025-08-15T22:51:03.847+05:30  INFO 20564 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T22:51:03.896+05:30  INFO 20564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-15T22:51:03.896+05:30  INFO 20564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-15T22:51:04.835+05:30  INFO 20564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T22:51:04.989+05:30  INFO 20564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 6 JPA repository interfaces.
+2025-08-15T22:51:06.224+05:30  INFO 20564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-15T22:51:06.247+05:30  INFO 20564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-15T22:51:06.247+05:30  INFO 20564 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-15T22:51:06.331+05:30  INFO 20564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-15T22:51:06.331+05:30  INFO 20564 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2435 ms
+2025-08-15T22:51:06.555+05:30  INFO 20564 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T22:51:06.645+05:30  INFO 20564 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-08-15T22:51:06.691+05:30  INFO 20564 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T22:51:07.380+05:30  INFO 20564 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T22:51:07.422+05:30  INFO 20564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T22:51:07.814+05:30  INFO 20564 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@199d3c80
+2025-08-15T22:51:07.817+05:30  INFO 20564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T22:51:07.935+05:30  WARN 20564 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T22:51:07.937+05:30  WARN 20564 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T22:51:07.970+05:30  INFO 20564 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -158,118 +344,231 @@ Consider defining a bean of type 'com.example.branflu.service.UserService' in yo
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-30T13:20:42.120+05:30  INFO 21968 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:20:42.196+05:30  INFO 21968 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:20:42.589+05:30  INFO 21968 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-07-30T13:20:42.661+05:30  WARN 21968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T13:20:43.138+05:30  INFO 21968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-30T13:20:43.170+05:30  INFO 21968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T13:20:43.177+05:30  INFO 21968 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 5.348 seconds (process running for 6.104)
-2025-07-30T13:21:19.647+05:30  INFO 21968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T13:21:19.648+05:30  INFO 21968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T13:21:19.649+05:30  INFO 21968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-30T13:28:28.755+05:30  WARN 21968 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
-2025-07-30T13:29:04.038+05:30  WARN 21968 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
-2025-07-30T13:30:51.010+05:30  INFO 21968 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T13:30:51.229+05:30  INFO 21968 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T13:30:51.262+05:30  INFO 21968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:30:51.323+05:30  INFO 21968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T13:30:51.422+05:30  INFO 21968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-30T13:30:54.943+05:30  INFO 16956 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 16956 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:30:54.945+05:30  INFO 16956 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:30:54.994+05:30  INFO 16956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-30T13:30:54.995+05:30  INFO 16956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-30T13:30:55.947+05:30  INFO 16956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:30:56.029+05:30  INFO 16956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:30:56.654+05:30  INFO 16956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:30:56.668+05:30  INFO 16956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:30:56.668+05:30  INFO 16956 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:30:56.723+05:30  INFO 16956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:30:56.723+05:30  INFO 16956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1728 ms
-2025-07-30T13:30:56.865+05:30  INFO 16956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:30:56.986+05:30  INFO 16956 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-07-30T13:30:57.036+05:30  INFO 16956 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:30:57.784+05:30  INFO 16956 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:30:57.820+05:30  INFO 16956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T13:30:58.229+05:30  INFO 16956 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a6a2d27
-2025-07-30T13:30:58.232+05:30  INFO 16956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T13:30:58.359+05:30  WARN 16956 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:30:58.361+05:30  WARN 16956 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:30:58.382+05:30  INFO 16956 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T13:30:59.563+05:30  INFO 16956 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:30:59.690+05:30  INFO 16956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:31:00.134+05:30  INFO 16956 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-07-30T13:31:00.204+05:30  WARN 16956 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T13:31:00.738+05:30  INFO 16956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-30T13:31:00.780+05:30  INFO 16956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T13:31:00.787+05:30  INFO 16956 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 6.361 seconds (process running for 7.543)
-2025-07-30T13:31:19.600+05:30  INFO 16956 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T13:31:19.601+05:30  INFO 16956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T13:31:19.602+05:30  INFO 16956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-30T13:31:19.659+05:30  WARN 16956 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
-2025-07-30T13:31:33.842+05:30  WARN 16956 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
-2025-07-30T13:32:33.641+05:30  INFO 16956 --- [http-nio-8080-exec-4] c.e.b.s.i.UserServiceImplementation      : Starting business registration for PayPal Email: business@branflu.com
-2025-07-30T13:32:33.644+05:30  INFO 16956 --- [http-nio-8080-exec-4] c.e.b.validator.UserRequestValidator     : UserRequestValidator >> validateBusiness -> request: UserRequest(name=Branflu Business, payPalEmail=business@branflu.com, password=securePassword123, role=BUSINESS)
-2025-07-30T13:32:33.644+05:30  INFO 16956 --- [http-nio-8080-exec-4] c.e.branflu.validator.EmailValidator     : EmailValidator >> isValidEmail -> business@branflu.com
-2025-07-30T13:32:33.786+05:30 DEBUG 16956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select b1_0.user_id,b1_0.bio,b1_0.category,b1_0.created_at,b1_0.image_url,b1_0.name,b1_0.password,b1_0.pay_pal_email,b1_0.role,b1_0.website_url from business b1_0 where b1_0.pay_pal_email=?
-2025-07-30T13:32:33.825+05:30  INFO 16956 --- [http-nio-8080-exec-4] c.e.b.s.i.UserServiceImplementation      : Creating new business with PayPal email: business@branflu.com
-2025-07-30T13:32:33.901+05:30 DEBUG 16956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : insert into business (bio,category,created_at,image_url,name,password,pay_pal_email,role,website_url,user_id) values (?,?,?,?,?,?,?,?,?,?)
-2025-07-30T13:32:33.958+05:30  INFO 16956 --- [http-nio-8080-exec-4] c.e.b.s.i.UserServiceImplementation      : Business saved successfully with ID: 2987eae4-cef5-41a8-b1e1-16247c654315
-2025-07-30T13:32:33.958+05:30  INFO 16956 --- [http-nio-8080-exec-4] .t.BusinessToBusinessResponseTransformer : BusinessToBusinessResponseTransformer >> tranformer >> transforming -> profile: com.example.branflu.entity.Business@52038bf6
-2025-07-30T13:35:20.878+05:30  INFO 16956 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-30T13:35:21.097+05:30  INFO 16956 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-30T13:35:21.104+05:30  INFO 16956 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:35:21.110+05:30  INFO 16956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T13:35:21.124+05:30  INFO 16956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-30T13:35:44.004+05:30  INFO 12128 --- [restartedMain] com.example.branflu.BranfluApplication   : Starting BranfluApplication using Java 17.0.9 with PID 12128 (C:\Users\athar\branflu2\branflu\branflu\build\classes\java\main started by athar in C:\Users\athar\branflu2\branflu)
-2025-07-30T13:35:44.007+05:30  INFO 12128 --- [restartedMain] com.example.branflu.BranfluApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T13:35:44.064+05:30  INFO 12128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-30T13:35:44.066+05:30  INFO 12128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-30T13:35:44.815+05:30  INFO 12128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T13:35:44.886+05:30  INFO 12128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 5 JPA repository interfaces.
-2025-07-30T13:35:45.450+05:30  INFO 12128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T13:35:45.463+05:30  INFO 12128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T13:35:45.464+05:30  INFO 12128 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-30T13:35:45.520+05:30  INFO 12128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T13:35:45.521+05:30  INFO 12128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1455 ms
-2025-07-30T13:35:45.655+05:30  INFO 12128 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T13:35:45.737+05:30  INFO 12128 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-07-30T13:35:45.774+05:30  INFO 12128 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T13:35:46.074+05:30  INFO 12128 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T13:35:46.110+05:30  INFO 12128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T13:35:46.470+05:30  INFO 12128 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a6bb832
-2025-07-30T13:35:46.473+05:30  INFO 12128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T13:35:46.524+05:30  WARN 12128 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T13:35:46.526+05:30  WARN 12128 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T13:35:46.552+05:30  INFO 12128 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-30T13:35:47.673+05:30  INFO 12128 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T13:35:47.760+05:30  INFO 12128 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T13:35:48.089+05:30  INFO 12128 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-07-30T13:35:48.152+05:30  WARN 12128 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T13:35:48.607+05:30  INFO 12128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-30T13:35:48.642+05:30  INFO 12128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T13:35:48.651+05:30  INFO 12128 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 5.04 seconds (process running for 5.702)
-2025-07-30T13:35:54.667+05:30  INFO 12128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-30T13:35:54.667+05:30  INFO 12128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-30T13:35:54.669+05:30  INFO 12128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-30T13:35:54.798+05:30  INFO 12128 --- [http-nio-8080-exec-1] c.e.b.s.i.UserServiceImplementation      : Starting business registration for PayPal Email: business@branflu.com
-2025-07-30T13:35:54.798+05:30  INFO 12128 --- [http-nio-8080-exec-1] c.e.b.validator.UserRequestValidator     : UserRequestValidator >> validateBusiness -> request: UserRequest(name=Branflu Business, payPalEmail=business@branflu.com, password=securePassword123, role=BUSINESS)
-2025-07-30T13:35:54.799+05:30  INFO 12128 --- [http-nio-8080-exec-1] c.e.branflu.validator.EmailValidator     : EmailValidator >> isValidEmail -> business@branflu.com
-2025-07-30T13:35:54.979+05:30 DEBUG 12128 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select b1_0.user_id,b1_0.bio,b1_0.category,b1_0.created_at,b1_0.image_url,b1_0.name,b1_0.password,b1_0.pay_pal_email,b1_0.role,b1_0.website_url from business b1_0 where b1_0.pay_pal_email=?
-2025-07-30T13:35:55.032+05:30  INFO 12128 --- [http-nio-8080-exec-1] c.e.b.s.i.UserServiceImplementation      : Updating existing business with PayPal email: business@branflu.com
-2025-07-30T13:35:55.073+05:30  INFO 12128 --- [http-nio-8080-exec-1] c.e.b.s.i.UserServiceImplementation      : Business saved successfully with ID: 2987eae4-cef5-41a8-b1e1-16247c654315
-2025-07-30T13:35:55.073+05:30  INFO 12128 --- [http-nio-8080-exec-1] .t.BusinessToBusinessResponseTransformer : BusinessToBusinessResponseTransformer >> tranformer >> transforming -> profile: com.example.branflu.entity.Business@28fae92d
+2025-08-15T22:51:09.207+05:30  INFO 20564 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T22:51:09.288+05:30 DEBUG 20564 --- [restartedMain] org.hibernate.SQL                        : create table youtube_analytics (id bigint not null auto_increment, comments bigint, date date, estimated_minutes_watched bigint, likes bigint, subscribers_gained bigint, views bigint, channel_id varchar(255) not null, primary key (id)) engine=InnoDB
+2025-08-15T22:51:09.371+05:30 DEBUG 20564 --- [restartedMain] org.hibernate.SQL                        : alter table youtube_analytics add constraint FK2jwgel9rubpp6taxpyc7soqw foreign key (channel_id) references youtube_influencer (channel_id)
+2025-08-15T22:51:09.461+05:30  INFO 20564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T22:51:10.177+05:30  INFO 20564 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-15T22:51:10.324+05:30  WARN 20564 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T22:51:10.894+05:30  INFO 20564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-15T22:51:10.944+05:30  INFO 20564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-15T22:51:10.953+05:30  INFO 20564 --- [restartedMain] com.example.branflu.BranfluApplication   : Started BranfluApplication in 7.729 seconds (process running for 8.816)
+2025-08-15T22:51:14.448+05:30  INFO 20564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T22:51:14.451+05:30  INFO 20564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-15T22:51:14.509+05:30  INFO 20564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 51 ms
+2025-08-15T22:51:23.337+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:51:23.427+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update youtube_influencer set analytics_json=?,image_url=?,last_fetched=?,subscriber_count=?,title=?,total_views=?,video_count=? where channel_id=?
+2025-08-15T22:51:24.037+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.050+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.069+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.071+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.087+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.091+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.100+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.104+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.113+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.115+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.122+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.127+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.133+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.137+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.145+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.148+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.156+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.160+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.169+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.172+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.181+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.185+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.193+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.197+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.205+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.209+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.218+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.221+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.228+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.231+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.238+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.240+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.246+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.249+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.257+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.260+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.269+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.271+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.278+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.281+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.288+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.292+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.299+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.302+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.308+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.312+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.319+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.321+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.327+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.330+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.336+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.339+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.347+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.350+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.356+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.360+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.368+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.371+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.377+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.380+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.385+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.387+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.395+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.397+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.404+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.407+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.412+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.414+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.419+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.421+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.427+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.429+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.436+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.438+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.443+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.445+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.452+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.455+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.461+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.463+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.470+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.473+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.481+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.485+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.494+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.497+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.506+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.510+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.520+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.524+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.533+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.539+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.547+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.553+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.561+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.563+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.570+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.572+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.578+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.581+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.587+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.589+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.595+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.597+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.603+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.604+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.609+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.611+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.618+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.620+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.624+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.627+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.634+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.637+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.645+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.648+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.655+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.657+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.664+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.667+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.673+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.677+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.687+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.691+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.698+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.701+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.709+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.712+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.717+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.721+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.726+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.728+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.734+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.736+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.742+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.744+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.750+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.754+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.761+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.764+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.772+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.776+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.784+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.788+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.795+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.799+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.806+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.809+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.816+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.820+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.827+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.830+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.837+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.840+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.848+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.852+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.859+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.863+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.869+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.871+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.877+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.879+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.885+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.888+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.894+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.897+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.904+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.907+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.914+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.915+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.923+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.926+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.931+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.934+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.940+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? and ya1_0.date=? limit ?
+2025-08-15T22:51:24.943+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into youtube_analytics (comments,date,estimated_minutes_watched,channel_id,likes,subscribers_gained,views) values (?,?,?,?,?,?,?)
+2025-08-15T22:51:24.954+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:51:37.501+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:51:37.526+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T22:51:37.741+05:30 DEBUG 20564 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:51:37.749+05:30 DEBUG 20564 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T22:52:34.241+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:52:34.249+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T22:54:17.855+05:30 DEBUG 20564 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:54:17.864+05:30 DEBUG 20564 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T22:58:37.361+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T22:58:37.377+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:08:13.856+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:08:13.920+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:10:03.872+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:10:03.872+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:12:14.276+05:30 DEBUG 20564 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:12:14.276+05:30 DEBUG 20564 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:15:02.632+05:30 DEBUG 20564 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:15:02.654+05:30 DEBUG 20564 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:16:23.815+05:30 DEBUG 20564 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:16:23.832+05:30 DEBUG 20564 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:18:11.967+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:18:11.987+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:27:35.151+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:27:35.247+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:28:51.421+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:28:51.438+05:30 DEBUG 20564 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:30:10.662+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:30:10.673+05:30 DEBUG 20564 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:31:08.533+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:31:08.547+05:30 DEBUG 20564 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:32:07.316+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select yi1_0.channel_id,yi1_0.analytics_json,yi1_0.image_url,yi1_0.last_fetched,yi1_0.subscriber_count,yi1_0.title,yi1_0.total_views,yi1_0.video_count from youtube_influencer yi1_0 where yi1_0.channel_id=?
+2025-08-15T23:32:07.327+05:30 DEBUG 20564 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select ya1_0.id,ya1_0.comments,ya1_0.date,ya1_0.estimated_minutes_watched,ya1_0.channel_id,ya1_0.likes,ya1_0.subscribers_gained,ya1_0.views from youtube_analytics ya1_0 left join youtube_influencer i1_0 on i1_0.channel_id=ya1_0.channel_id where i1_0.channel_id=? order by ya1_0.date
+2025-08-15T23:48:04.891+05:30  INFO 20564 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T23:48:05.764+05:30  INFO 20564 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T23:48:06.077+05:30  INFO 20564 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T23:48:06.477+05:30  INFO 20564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T23:48:06.672+05:30  INFO 20564 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -24,6 +24,7 @@ import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = {"http://localhost:3000", "https://native-violently-imp.ngrok-free.app"})
 @RequestMapping("/api")
 public class AuthenticationController {
 
@@ -47,7 +48,7 @@ public class AuthenticationController {
         return userService.registerAsBusiness(request);
     }
 
-    @PostMapping("/login/influencer")
+    @PostMapping("/login")
     public ResponseEntity<JWTAuthenticationResponse> createToken(@RequestBody JWTAuthenticationRequest jwtAuthenticationRequest) throws Exception {
         try {
             authenticationManager.authenticate(
@@ -57,7 +58,9 @@ public class AuthenticationController {
                     )
             );
         } catch (AuthenticationException e) {
-            throw new Exception("Invalid username or password", e);
+            return ResponseEntity
+                    .status(HttpStatus.UNAUTHORIZED)
+                    .body(new JWTAuthenticationResponse("Invalid username or password"));
         }
 
         UserDetails userDetails = userDetailsService.loadUserByUsername(jwtAuthenticationRequest.getPayPalEmail());

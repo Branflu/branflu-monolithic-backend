@@ -4,7 +4,6 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,26 +24,38 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
-    // ⛔ List of paths that don't require JWT filtering
     private static final Set<String> EXCLUDED_PATHS = Set.of(
             "/influencer/register",
             "/login/influencer",
             "/api/business/register",
             "/api/youtube/auth",
             "/api/youtube/callback",
+            "/api/youtube/influencer/**",
             "/api/facebook/login",
             "/api/facebook/callback",
             "/api/instagram/callback",
-            "/api/instagram/login",
+            "/api/login",
             "/api/instagram/webhook"
     );
 
     @Override
-    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+    protected boolean shouldNotFilter(HttpServletRequest request) {
         String path = request.getServletPath();
-        boolean shouldSkip = EXCLUDED_PATHS.contains(path);
-        System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: " + shouldSkip);
-        return shouldSkip;
+
+        // Exact matches
+        if (EXCLUDED_PATHS.contains(path)) {
+            System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: true (exact match)");
+            return true;
+        }
+
+        // Dynamic match for influencer paths
+        if (path.startsWith("/api/youtube/influencer/")) {
+            System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: true (prefix match)");
+            return true;
+        }
+
+        System.out.println("[JWT Filter] Request Path: " + path + " | Should Skip: false");
+        return false;
     }
 
     @Override
@@ -53,11 +64,19 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
                                     FilterChain filterChain)
             throws ServletException, IOException {
 
+        // 1) Immediately allow CORS preflight (OPTIONS) requests to pass through
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            // optional: log preflight for debug
+            System.out.println("[JWT Filter] OPTIONS preflight - skipping JWT processing for: " + request.getServletPath());
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         final String authHeader = request.getHeader("Authorization");
         final String jwt;
         final String username;
 
-        System.out.println("[JWT Filter] Authorization Header: " + authHeader);
+        System.out.println("[JWT Filter] Method: " + request.getMethod() + " | Authorization Header: " + authHeader);
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             System.out.println("[JWT Filter] No JWT token found in header");
@@ -66,7 +85,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
         }
 
         jwt = authHeader.substring(7);
-        System.out.println("[JWT Filter] Extracted JWT: " + jwt);
+        System.out.println("[JWT Filter] Extracted JWT: " + (jwt.length() > 10 ? jwt.substring(0, 10) + "..." : jwt));
 
         try {
             username = jwtService.extractUsername(jwt);

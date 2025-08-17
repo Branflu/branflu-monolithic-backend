@@ -1,29 +1,59 @@
 package com.example.branflu.controller;
 
+import com.example.branflu.entity.YoutubeInfluencer;
 import com.example.branflu.service.YoutubeService;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/youtube")
 @RequiredArgsConstructor
 public class YoutubeController {
 
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
     private final YoutubeService youtubeService;
 
-    // Step 1: Redirect user to Google OAuth consent screen
     @GetMapping("/auth")
     public void redirectToGoogleAuth(HttpServletResponse response) throws IOException {
-        String authUrl = youtubeService.buildAuthUrl();
-        response.sendRedirect(authUrl);
+        response.sendRedirect(youtubeService.buildAuthUrl());
     }
 
-    // Step 2: Google redirects back here with auth code
     @GetMapping("/callback")
-    public String handleOAuthCallback(@RequestParam("code") String code) {
-        return youtubeService.handleOAuthCallback(code);
+    public void handleOAuthCallback(@RequestParam("code") String code,
+                                    HttpServletResponse response) throws IOException {
+        String jwtToken = youtubeService.handleOAuthCallback(code);
+        response.sendRedirect(frontendUrl + "/login-success?token=" + jwtToken);
     }
+
+    @GetMapping("/influencer/{channelId}")
+    public ResponseEntity<?> getInfluencerData(@PathVariable String channelId) {
+        YoutubeInfluencer influencer = youtubeService.getInfluencerByChannelId(channelId);
+        if (influencer == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("error", "Influencer not found"));
+        }
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("channelId", influencer.getChannelId());
+        response.put("name", influencer.getTitle());
+        response.put("imageUrl", influencer.getImageUrl());
+        response.put("subscriberCount", influencer.getSubscriberCount());
+        response.put("videoCount", influencer.getVideoCount());
+        response.put("totalViews", influencer.getTotalViews());
+        response.put("analytics", youtubeService.getAnalyticsForGraph(channelId));
+
+        return ResponseEntity.ok(response);
+    }
+
+
 }

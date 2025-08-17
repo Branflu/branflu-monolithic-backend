@@ -23,6 +23,9 @@ public class FacebookController {
     @Value("${FACEBOOK_REDIRECT_URI}")
     private String redirectUri;
 
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
     // 1. Redirect user to Facebook login
     @GetMapping("/login")
     public RedirectView loginWithFacebook() {
@@ -39,7 +42,7 @@ public class FacebookController {
     public void handleFacebookCallback(@RequestParam("code") String code ,HttpServletResponse response) throws IOException {
         String accessToken = facebookService.getFacebookAccessToken(code);
         facebookService.fetchAndSaveUser(accessToken);
-        response.sendRedirect("http://localhost:3000/login-success");
+        response.sendRedirect(frontendUrl + "/login-success");
 
     }
 

@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface YoutubeRepository extends JpaRepository<YoutubeInfluencer, String> {
+    YoutubeInfluencer findByChannelId(String channelId);
 }
