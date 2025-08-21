@@ -19,9 +19,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.AuthenticationException;
 
-import java.util.List;
-import java.util.UUID;
-
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins = {"http://localhost:3000", "https://native-violently-imp.ngrok-free.app"})

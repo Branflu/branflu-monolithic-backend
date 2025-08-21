@@ -3,7 +3,6 @@ package com.example.branflu.security;
 import com.example.branflu.entity.User;
 import com.example.branflu.entity.YoutubeInfluencer;
 import com.example.branflu.repository.BusinessRepository;
-import com.example.branflu.repository.InfluencerRepository;
 import com.example.branflu.repository.YoutubeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

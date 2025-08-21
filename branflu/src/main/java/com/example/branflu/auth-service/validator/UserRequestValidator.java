@@ -1,7 +1,6 @@
 
 package com.example.branflu.validator;
 
-import com.example.branflu.entity.Link;
 import com.example.branflu.enums.ErrorData;
 import com.example.branflu.exception.BadRequestException;
 import com.example.branflu.payload.request.InfluencerRequest;

@@ -1,24 +1,25 @@
-package com.example.branflu.payload.response;
+package com.example.branflu.payload.request;
 
 import com.example.branflu.enums.Role;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
-
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @JsonIgnoreProperties
 @ToString
-public class UserResponse {
-    private UUID userId;
+public class UserRequest {
+    @NotBlank
     private String name;
+    @NotBlank
     private String payPalEmail;
+    @NotBlank
+    private String password;
+    @NotBlank
     private Role role;
-    private Date createdAt;
 }
