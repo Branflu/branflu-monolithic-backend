@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.4'
     id 'io.spring.dependency-management' version '1.1.7'
+    id 'com.github.hierynomus.license' version '0.16.1'
 }
 
 group = 'com.example'
@@ -41,7 +42,7 @@ dependencies {
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
 
     // MySQL
-    runtimeOnly 'mysql:mysql-connector-java'
+
     implementation 'com.mysql:mysql-connector-j:8.3.0'
 
 
@@ -65,6 +66,14 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
+}
+
+license {
+    header = rootProject.file('license-header.txt')
+    include '**/*.java'
+    mapping {
+        java = 'SLASHSTAR_STYLE'
+    }
 }
 
 tasks.named('test') {
