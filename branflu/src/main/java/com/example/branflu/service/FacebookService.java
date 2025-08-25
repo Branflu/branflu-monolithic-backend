@@ -2,9 +2,12 @@ package com.example.branflu.service;
 
 import com.example.branflu.entity.FacebookUser;
 import com.example.branflu.repository.FacebookUserRepository;
+import com.example.branflu.security.CustomUserDetailsService;
+import com.example.branflu.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,6 +19,8 @@ import java.util.Map;
 public class FacebookService {
 
     private final FacebookUserRepository facebookUserRepository;
+    private final CustomUserDetailsService userDetailsService;
+    private final JwtService jwtService;
     private final RestTemplate restTemplate = new RestTemplate();
 
     @Value("${facebook.client.id}")
@@ -56,11 +61,13 @@ public class FacebookService {
             profilePictureUrl = (String) pictureData.get("url");
         }
 
-        FacebookUser user = facebookUserRepository.findByFacebookUserId(userId)
-                .orElse(FacebookUser.builder()
-                        .facebookUserId(userId)
-                        .createdAt(LocalDateTime.now())
-                        .build());
+        FacebookUser user = facebookUserRepository.findByFacebookUserId(userId);
+        if (user == null) {
+            user = FacebookUser.builder()
+                    .facebookUserId(userId)
+                    .createdAt(LocalDateTime.now())
+                    .build();
+        }
 
         user.setName(name);
         user.setEmail(email);
@@ -143,4 +150,19 @@ public class FacebookService {
         }
         return null;
     }
+
+    public String handleOAuthCallback(String code) {
+        // 1. Exchange code for access token
+        String accessToken = getFacebookAccessToken(code);
+
+        // 2. Fetch + save user in DB
+        FacebookUser savedUser = fetchAndSaveUser(accessToken);
+
+        // 3. Load user details for Spring Security
+        UserDetails userDetails = userDetailsService.loadInfluencerByFacebookId(savedUser.getFacebookUserId());
+
+        // 4. Generate & return JWT
+        return jwtService.generateToken(userDetails);
+    }
+
 }

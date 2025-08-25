@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BusinessRequest extends UserRequest {
-    private String imageUrl;
+//    private String imageUrl;
     private String websiteUrl;
     private String Bio;
     private Category category;

@@ -1,6 +1,7 @@
 package com.example.branflu.controller;
 
 import com.example.branflu.entity.FacebookUser;
+import com.example.branflu.security.CustomUserDetailsService;
 import com.example.branflu.service.FacebookService;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
@@ -16,6 +17,7 @@ import java.io.IOException;
 public class FacebookController {
 
     private final FacebookService facebookService;
+    private final CustomUserDetailsService userDetailsService;
 
     @Value("${facebook.client.id}")
     private String clientId;
@@ -39,11 +41,10 @@ public class FacebookController {
 
     // 2. Handle Facebook OAuth callback
     @GetMapping("/callback")
-    public void handleFacebookCallback(@RequestParam("code") String code ,HttpServletResponse response) throws IOException {
-        String accessToken = facebookService.getFacebookAccessToken(code);
-        facebookService.fetchAndSaveUser(accessToken);
-        response.sendRedirect(frontendUrl + "/login-success");
-
+    public void handleFacebookCallback(@RequestParam("code") String code,
+                                       HttpServletResponse response) throws IOException {
+        String jwtToken = facebookService.handleOAuthCallback(code);
+        response.sendRedirect(frontendUrl + "/login-success?token=" + jwtToken);
     }
 
     // 3. Optional: Add an endpoint to fetch the latest data if user is already authenticated

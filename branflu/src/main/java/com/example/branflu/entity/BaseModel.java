@@ -1,4 +1,4 @@
-package com.example.branfluinfluncerservice.model;
+package com.example.branflu.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;

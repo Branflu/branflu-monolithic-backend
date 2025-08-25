@@ -56,7 +56,13 @@ public class SecurityConfiguration {
                                 "/api/facebook/callback",
                                 "/api/instagram/callback",
                                 "/api/instagram/login",
-                                "/api/instagram/webhook"
+                                "/api/instagram/webhook",
+                                "/api/otp/send",
+                                "/api/otp/verify",
+                                "/auth/google/auth",
+                                "/auth/google/callback",
+                                "/auth/google/failure",
+                                "/oauth2/authorization/google"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

@@ -34,8 +34,16 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
             "/api/facebook/login",
             "/api/facebook/callback",
             "/api/instagram/callback",
+            "/api/otp/send",
+            "/api/otp/verify",
             "/api/login",
-            "/api/instagram/webhook"
+            "/api/instagram/webhook",
+            "/auth/google/**",
+            "/oauth2/authorization/google",
+            "/auth/google/auth",
+            "/auth/google/callback",
+            "/auth/google/failure"
+
     );
 
     @Override
