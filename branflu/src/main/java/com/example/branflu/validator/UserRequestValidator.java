@@ -13,6 +13,8 @@ package com.example.branflu.validator;
 
 import com.example.branflu.enums.ErrorData;
 import com.example.branflu.exception.BadRequestException;
+import com.example.branflu.exception.CustomException;
+import com.example.branflu.payload.request.BusinessRequest;
 import com.example.branflu.payload.request.InfluencerRequest;
 import com.example.branflu.payload.request.LinkRequest;
 import com.example.branflu.payload.request.UserRequest;
@@ -57,14 +59,15 @@ public class UserRequestValidator {
     private void validateCommonFields(UserRequest userRequest) {
         validateName(userRequest);
         validateEmail(userRequest);
+        validatePassword(userRequest);
     }
 
     private void validateName(UserRequest userRequest) {
         if (ObjectUtils.isEmpty(userRequest.getName())) {
-            throw new BadRequestException(ErrorData.NAME_MANDATORY);
+            throw new CustomException(ErrorData.NAME_MANDATORY.getMessage());
         }
         if (userRequest.getName().length() > 100) {
-            throw new BadRequestException(ErrorData.NAME_LIMIT_EXCEED);
+            throw new CustomException(ErrorData.NAME_LIMIT_EXCEED.getMessage());
         }
     }
 
@@ -72,7 +75,7 @@ public class UserRequestValidator {
         if (!ObjectUtils.isEmpty(userRequest.getPayPalEmail())) {
             emailValidator.isValidEmail(
                     userRequest.getPayPalEmail(),
-                    () -> new BadRequestException(ErrorData.PAYPAL_EMAIL_INVALID)
+                    () -> new CustomException(ErrorData.PAYPAL_EMAIL_INVALID.getMessage())
             );
         }
     }
@@ -91,6 +94,21 @@ public class UserRequestValidator {
             String url = linkRequest.getUrl();
             log.info("Validating link: {}", url); // 👈 add this line
             linkValidator.isValidLink(url, () -> new BadRequestException(ErrorData.LINK_INVALID));
+        }
+    }
+
+    private void validatePassword(UserRequest userRequest){
+        if(ObjectUtils.isEmpty(userRequest.getPassword())){
+            throw new CustomException(ErrorData.PASSWORD_MANDATORY.getMessage());
+        }else{
+            String password = userRequest.getPassword();
+
+            String regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*?&]).{8,64}$";
+
+            if (!password.matches(regex)) {
+                throw new CustomException(ErrorData.PASSWORD_INVALID.getMessage());
+            }
+
         }
     }
 

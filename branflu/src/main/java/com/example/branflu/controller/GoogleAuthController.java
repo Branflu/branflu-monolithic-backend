@@ -45,7 +45,7 @@ public class GoogleAuthController {
     public void handleCallback(@RequestParam("code") String code,
                                HttpServletResponse response) throws IOException {
         String jwt = googleAuthService.handleOAuthCallback(code);
-        response.sendRedirect(frontendUrl + "/auth/callback?token=" + jwt);
+        response.sendRedirect(frontendUrl + "/login-redirecting?token=" + jwt);
     }
 
     @GetMapping("/failure")

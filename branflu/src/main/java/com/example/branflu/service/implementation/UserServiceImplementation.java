@@ -23,6 +23,8 @@ import com.example.branflu.payload.response.InstagramAnalytics;
 import com.example.branflu.payload.response.UserResponse;
 import com.example.branflu.repository.BusinessRepository;
 import com.example.branflu.repository.InfluencerRepository;
+import com.example.branflu.security.CustomUserDetailsService;
+import com.example.branflu.security.JwtService;
 import com.example.branflu.service.UserService;
 import com.example.branflu.transformer.BusinessRequestToBusinessTransformer;
 import com.example.branflu.transformer.BusinessToBusinessResponseTransformer;
@@ -37,8 +39,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import java.util.*;
 
@@ -58,6 +63,8 @@ public class UserServiceImplementation implements UserService {
     private final BusinessToBusinessResponseTransformer businessResponseTransformer;
     private final PasswordEncoder passwordEncoder;
     private final InstagramAnalyticsService instagramAnalyticsService;
+    private final CustomUserDetailsService userDetailsService;
+    private final JwtService jwtService;
 
     @Override
     public ResponseEntity<UserResponse> registerAsInfluencer(InfluencerRequest influencerRequest) {
@@ -130,59 +137,67 @@ public class UserServiceImplementation implements UserService {
     }
 
     @Override
-    public ResponseEntity<UserResponse> registerAsBusiness(BusinessRequest businessRequest) {
+    @Transactional
+    public String registerAsBusinessAndReturnJwt(BusinessRequest businessRequest) {
         log.info("✅ Inside registerAsBusiness service");
-        log.info("📨 Business Name: {}", businessRequest.getName());
-        log.info("📨 PayPal Email (Request): {}", businessRequest.getPayPalEmail());
 
-        // Step 1: Get logged-in user's email if present
-        String authenticatedEmail = UserContextUtil.getAuthenticatedEmail();
-        log.info("🔐 Authenticated Email from JWT (if any): {}", authenticatedEmail);
-
-        // Step 2: Validate input request
-        try {
-            userRequestValidator.validateBusiness(businessRequest);
-        } catch (Exception e) {
-            log.error("❌ Validation failed for business: {}", businessRequest, e);
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        // Normalize & validate email early
+        if (businessRequest.getPayPalEmail() == null) {
+            throw new CustomException("PayPal email is required");
         }
+        String normalizedEmail = businessRequest.getPayPalEmail().trim().toLowerCase();
+        businessRequest.setPayPalEmail(normalizedEmail);
 
-        // Step 3: Check if business already exists
-        Optional<Business> optionalBusiness = businessRepository.findBusinessByPayPalEmail(businessRequest.getPayPalEmail());
+        String authenticatedEmail = UserContextUtil.getAuthenticatedEmail();
+        userRequestValidator.validateBusiness(businessRequest);
+
+        Business saved;
+        Optional<Business> optionalBusiness = businessRepository.findBusinessByPayPalEmail(normalizedEmail);
 
         if (optionalBusiness.isPresent()) {
             Business existing = optionalBusiness.get();
 
-            // ✅ Allow update only if user is logged in AND owns the business
+            // Ownership check — only allow update if authenticated user matches existing owner
             if (authenticatedEmail == null || !authenticatedEmail.equalsIgnoreCase(existing.getPayPalEmail())) {
-                log.warn("❌ Unauthorized update attempt for PayPal Email: {}", businessRequest.getPayPalEmail());
+                log.warn("❌ Unauthorized update attempt for PayPal Email: {}", normalizedEmail);
                 throw new CustomException(ErrorData.PAYPAL_EMAIL_EXIST.getMessage());
             }
 
-            // ✅ Perform update
-            log.info("🔁 Updating existing business with PayPal email: {}", existing.getPayPalEmail());
-            Business updated = businessRequestToBusinessTransformer.transform(businessRequest, existing);
-            updated.setRole(Role.BUSINESS);
+            log.info("🔁 Updating existing business: {}", existing.getPayPalEmail());
+            saved = businessRequestToBusinessTransformer.transform(businessRequest, existing);
+            saved.setRole(Role.BUSINESS);
+            saved = businessRepository.save(saved);
+        } else {
+            log.info("🆕 Creating new business: {}", normalizedEmail);
+            Business newBusiness = businessRequestToBusinessTransformer.transform(businessRequest);
+            newBusiness.setRole(Role.BUSINESS);
+            newBusiness.setCreatedAt(new Date());
 
-            Business saved = businessRepository.save(updated);
-            log.info("✅ Business updated successfully with ID: {}", saved.getUserId());
+            // If password provided -> encode. If not (OAuth flow) -> generate a random encoded password
+            if (StringUtils.hasText(businessRequest.getPassword())) {
+                newBusiness.setPassword(passwordEncoder.encode(businessRequest.getPassword()));
+            } else {
+                // generate a strong random password that user doesn't know (prevents null)
+                String random = UUID.randomUUID().toString();
+                newBusiness.setPassword(passwordEncoder.encode(random));
+            }
 
-            UserResponse response = businessResponseTransformer.transform(saved);
-            return ResponseEntity.ok(response);
+            saved = businessRepository.save(newBusiness);
         }
 
-        // Step 4: If business does not exist — allow anyone to register
-        log.info("🆕 Creating new business with PayPal email: {}", businessRequest.getPayPalEmail());
-        Business newBusiness = businessRequestToBusinessTransformer.transform(businessRequest);
-        newBusiness.setRole(Role.BUSINESS);
-        newBusiness.setCreatedAt(new Date());
-        newBusiness.setPassword(passwordEncoder.encode(businessRequest.getPassword()));
+        // Load user details for token generation. Try email-based loader first, fallback to username loader.
+        UserDetails userDetails;
+        try {
+            userDetails = userDetailsService.loadUserByEmail(saved.getPayPalEmail());
+        } catch (Exception e) {
+            log.debug("loadUserByEmail failed, falling back to loadUserByUsername: {}", e.getMessage());
+            userDetails = userDetailsService.loadUserByUsername(saved.getPayPalEmail());
+        }
 
-        Business saved = businessRepository.save(newBusiness);
-        log.info("✅ New business saved successfully with ID: {}", saved.getUserId());
-
-        UserResponse response = businessResponseTransformer.transform(saved);
-        return ResponseEntity.ok(response);
+        // Optionally check that userDetails is enabled/valid before generating token
+        String token = jwtService.generateToken(userDetails);
+        log.info("🔐 Generated JWT for business: {} (userId={})", saved.getPayPalEmail(), saved.getUserId());
+        return token;
     }
 
 

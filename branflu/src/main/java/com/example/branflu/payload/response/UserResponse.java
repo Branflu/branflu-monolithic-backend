@@ -30,4 +30,5 @@ public class UserResponse {
     private String payPalEmail;
     private Role role;
     private Date createdAt;
+    private String token;
 }

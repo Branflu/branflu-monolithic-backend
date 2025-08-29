@@ -20,7 +20,7 @@ import java.util.UUID;
 
 public interface UserService {
     ResponseEntity<UserResponse> registerAsInfluencer(InfluencerRequest influencerRequest);
-    ResponseEntity<UserResponse> registerAsBusiness(BusinessRequest businessRequest);
+    String registerAsBusinessAndReturnJwt(BusinessRequest businessRequest);
     ResponseEntity<List<UserResponse>> getAllInfluencer();
     ResponseEntity<UserResponse> getInfluencerById(UUID userId);
     ResponseEntity<String> deleteLoggedInInfluencer();

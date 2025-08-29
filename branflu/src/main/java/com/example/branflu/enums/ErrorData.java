@@ -27,7 +27,9 @@ public enum ErrorData {
     NAME_LIMIT_EXCEED("BRANFLU__ERROR-2003", "Name length limit exceeded"),
     PAYPAL_EMAIL_INVALID("BRANFLU__ERROR-2004", "PayPal email is invalid"),
     PAYPAL_EMAIL_EXIST("BRANFLU__ERROR-2004", "PayPal email already exist"),
-    LINK_INVALID("BRANFLU__ERROR-2005", "Platform link is invalid"),;
+    LINK_INVALID("BRANFLU__ERROR-2005", "Platform link is invalid"),
+    PASSWORD_MANDATORY("BRANFLU__ERROR-2006","Password is mandatory"),
+    PASSWORD_INVALID("BRANFLU__2007","Password must be 8-64 characters long and include at least one uppercase, one lowercase, one number, and one special character");
 
     private final String code;
     private final String message;

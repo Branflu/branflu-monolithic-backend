@@ -22,5 +22,5 @@ public class Business extends User {
 //    private String imageUrl;
     private String websiteUrl;
     private String Bio;
-    private Category category;
+
 }
